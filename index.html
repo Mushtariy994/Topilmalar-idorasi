@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topilmalar Idorasi | Bosh sahifa</title>
+    <link rel="stylesheet" href="./stayl.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">🔎 Topilmalar <span>Idorasi</span></a>
+
+    <nav class="nav">
+        <a class="active" href="index.html">Bosh sahifa</a>
+        <a href="qidirish.html">Qidirish</a>
+        <a href="elon-joylash.html">E'lon joylash</a>
+        <a href="qanday-ishlaydi.html">Qanday ishlaydi?</a>
+        <a href="biz-haqimizda.html">Biz haqimizda</a>
+    </nav>
+
+    <button class="theme-btn" id="themeBtn">🌙</button>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">ISHONCHLI TOPILMALAR PLATFORMASI</span>
+            <h1>Yo‘qolgan narsangizni <span>topishga yordam beramiz!</span></h1>
+            <p>
+                Yo‘qolgan yoki topilgan buyumlar haqida e'lon joylang.
+                Balki siz izlayotgan narsa allaqachon topilgandir.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="qidirish.html" class="btn primary">Narsalarni qidirish</a>
+                <a href="elon-joylash.html" class="btn secondary">E'lon joylash</a>
+            </div>
+        </div>
+        <div class="hero-icon">🔍</div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Platformamiz imkoniyatlari</h2>
+        <p class="section-desc">Yo‘qolgan buyumlarni topish endi osonroq.</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🔎</div>
+                <h3>Qidirish</h3>
+                <p>Yo‘qolgan yoki topilgan narsalarni tez va oson qidiring.</p>
+                <a href="qidirish.html">Batafsil →</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📢</div>
+                <h3>E'lon joylash</h3>
+                <p>Topgan yoki yo‘qotgan buyumingiz haqida e'lon bering.</p>
+                <a href="elon-joylash.html">Batafsil →</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🤝</div>
+                <h3>Yordam berish</h3>
+                <p>Buyum egasini topishga yordam bering va savobli ish qiling.</p>
+                <a href="qanday-ishlaydi.html">Batafsil →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats container">
+        <div><h2 id="totalCount">0</h2><p>Jami e'lonlar</p></div>
+        <div><h2 id="lostCount">0</h2><p>Yo‘qolgan buyumlar</p></div>
+        <div><h2 id="foundCount">0</h2><p>Topilgan buyumlar</p></div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">So‘nggi e'lonlar</h2>
+        <div id="latestListings" class="listing-grid">
+            <p>Hozircha e'lonlar mavjud emas.</p>
+        </div>
+        <div class="center">
+            <a href="qidirish.html" class="btn primary">Barcha e'lonlarni ko‘rish</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <h3>🔎 Topilmalar Idorasi</h3>
+    <p>Yo‘qolgan narsalarni topishda sizga yordam beramiz.</p>
+    <p>© 2026 Topilmalar Idorasi. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+</body>
+</html>

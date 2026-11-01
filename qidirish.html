@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E'lonlarni qidirish | Topilmalar Idorasi</title>
+    <link rel="stylesheet" href="./stayl.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">🔎 Topilmalar <span>Idorasi</span></a>
+    <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a class="active" href="qidirish.html">Qidirish</a>
+        <a href="elon-joylash.html">E'lon joylash</a>
+        <a href="qanday-ishlaydi.html">Qanday ishlaydi?</a>
+        <a href="biz-haqimizda.html">Biz haqimizda</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn">🌙</button>
+</header>
+
+<main class="container page">
+    <h1 class="page-title">E'lonlarni qidirish</h1>
+    <p class="section-desc">Kerakli buyumni nomi yoki hududi orqali qidiring.</p>
+
+    <div class="search-panel">
+        <input type="text" id="searchInput" placeholder="Buyum nomini yozing...">
+
+        <select id="typeFilter">
+            <option value="">Barcha e'lonlar</option>
+            <option value="lost">Yo‘qolgan</option>
+            <option value="found">Topilgan</option>
+        </select>
+
+        <select id="categoryFilter">
+            <option value="">Barcha kategoriyalar</option>
+            <option value="Telefon">Telefon</option>
+            <option value="Hujjat">Hujjat</option>
+            <option value="Hamyon">Hamyon</option>
+            <option value="Kalit">Kalit</option>
+            <option value="Sumka">Sumka</option>
+            <option value="Boshqa">Boshqa</option>
+        </select>
+
+        <select id="regionFilter">
+            <option value="">Barcha hududlar</option>
+            <option value="Toshkent">Toshkent</option>
+            <option value="Farg‘ona">Farg‘ona</option>
+            <option value="Andijon">Andijon</option>
+            <option value="Namangan">Namangan</option>
+            <option value="Samarqand">Samarqand</option>
+            <option value="Buxoro">Buxoro</option>
+            <option value="Qashqadaryo">Qashqadaryo</option>
+            <option value="Surxondaryo">Surxondaryo</option>
+            <option value="Xorazm">Xorazm</option>
+            <option value="Navoiy">Navoiy</option>
+            <option value="Jizzax">Jizzax</option>
+            <option value="Sirdaryo">Sirdaryo</option>
+            <option value="Qoraqalpog‘iston">Qoraqalpog‘iston</option>
+        </select>
+
+        <button class="btn primary" id="searchBtn">Qidirish</button>
+    </div>
+
+    <h2 class="section-title">Natijalar</h2>
+    <div id="searchResults" class="listing-grid"></div>
+</main>
+
+<footer class="footer">
+    <h3>Topilmalar Idorasi</h3>
+    <p>© 2026 Barcha huquqlar himoyalangan.</p>
+</footer>
+
+</body>
+</html>

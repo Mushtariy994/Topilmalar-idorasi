@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E'lon joylash | Topilmalar Idorasi</title>
+    <link rel="stylesheet" href="./stayl.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">🔎 Topilmalar <span>Idorasi</span></a>
+    <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="qidirish.html">Qidirish</a>
+        <a class="active" href="elon-joylash.html">E'lon joylash</a>
+        <a href="qanday-ishlaydi.html">Qanday ishlaydi?</a>
+        <a href="biz-haqimizda.html">Biz haqimizda</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn">🌙</button>
+</header>
+
+<main class="container page">
+    <h1 class="page-title">Yangi e'lon joylash</h1>
+    <p class="section-desc">Buyumingiz haqida ma'lumotlarni to‘ldiring.</p>
+
+    <form id="listingForm" class="form-box">
+
+        <label>E'lon turi</label>
+        <select id="listingType" required>
+            <option value="">Tanlang</option>
+            <option value="lost">Yo‘qotdim</option>
+            <option value="found">Topib oldim</option>
+        </select>
+
+        <label>Buyum nomi</label>
+        <input type="text" id="itemName" placeholder="Masalan: Samsung telefon" required>
+
+        <label>Kategoriya</label>
+        <select id="itemCategory" required>
+            <option value="">Tanlang</option>
+            <option value="Telefon">Telefon</option>
+            <option value="Hujjat">Hujjat</option>
+            <option value="Hamyon">Hamyon</option>
+            <option value="Kalit">Kalit</option>
+            <option value="Sumka">Sumka</option>
+            <option value="Boshqa">Boshqa</option>
+        </select>
+
+        <label>Hudud</label>
+        <select id="itemRegion" required>
+            <option value="">Viloyatni tanlang</option>
+            <option value="Toshkent">Toshkent</option>
+            <option value="Farg‘ona">Farg‘ona</option>
+            <option value="Andijon">Andijon</option>
+            <option value="Namangan">Namangan</option>
+            <option value="Samarqand">Samarqand</option>
+            <option value="Buxoro">Buxoro</option>
+            <option value="Qashqadaryo">Qashqadaryo</option>
+            <option value="Surxondaryo">Surxondaryo</option>
+            <option value="Xorazm">Xorazm</option>
+            <option value="Navoiy">Navoiy</option>
+            <option value="Jizzax">Jizzax</option>
+            <option value="Sirdaryo">Sirdaryo</option>
+            <option value="Qoraqalpog‘iston">Qoraqalpog‘iston</option>
+        </select>
+
+        <label>Voqea sodir bo‘lgan sana</label>
+        <input type="date" id="itemDate" required>
+
+        <label>Manzil</label>
+        <input type="text" id="itemLocation" placeholder="Masalan: Farg‘ona, markaziy bozor" required>
+
+        <label>Telefon raqamingiz</label>
+        <input type="tel" id="itemPhone" placeholder="+998901234567" required>
+
+        <label>Buyum rasmi</label>
+        <input type="file" id="itemImage" accept="image/png,image/jpeg,image/webp">
+        <small>Rasm hajmi 2 MB dan oshmasin.</small>
+
+        <label>Qo‘shimcha ma'lumot</label>
+        <textarea id="itemDescription" rows="5" placeholder="Buyum haqida batafsil yozing..." required></textarea>
+
+        <button type="submit" class="btn primary full">E'lonni joylash</button>
+
+        <p id="formMessage" class="form-message"></p>
+    </form>
+</main>
+
+<footer class="footer">
+    <h3>Topilmalar Idorasi</h3>
+    <p>© 2026 Barcha huquqlar himoyalangan.</p>
+</footer>
+
+</body>
+</html>
